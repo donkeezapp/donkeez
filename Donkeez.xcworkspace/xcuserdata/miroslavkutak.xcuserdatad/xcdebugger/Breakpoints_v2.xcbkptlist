@@ -84,7 +84,7 @@
                   moduleName = "donkeez"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/miroslavkutak/Downloads/Donkeez%202/DonkeezLogin/DonkeezLogin/Profile/ProfileTimeCell.m"
-                  timestampString = "497136553.984977"
+                  timestampString = "497139009.90953"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "22"
@@ -99,7 +99,7 @@
                   moduleName = "donkeez"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/miroslavkutak/Downloads/Donkeez%202/DonkeezLogin/DonkeezLogin/Profile/ProfileTimeCell.m"
-                  timestampString = "497136553.987525"
+                  timestampString = "497139009.912838"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "24"
@@ -107,6 +107,22 @@
                   offsetFromSymbolStart = "44">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DonkeezLogin/Vote/ProfileCell.m"
+            timestampString = "497138440.975541"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "-onShare:"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

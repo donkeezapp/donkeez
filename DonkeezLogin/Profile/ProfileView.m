@@ -98,7 +98,15 @@
             NSString *firstName = ui.first_name;
             NSString *lastName = ui.last_name;
             
-            _lblName.text = [NSString stringWithFormat:@"%@ %@", firstName, lastName];
+            NSMutableArray *names = [NSMutableArray array];
+            if (firstName) {
+                [names addObject:firstName];
+            }
+            if (lastName) {
+                [names addObject:lastName];
+            }
+            
+            _lblName.text = [names componentsJoinedByString:@" "];
             
             [_imgAvatar setBorderForColor:[UIColor whiteColor] width:2. radius:_imgAvatar.bounds.size.height / 2.]; 
         }];

@@ -5,7 +5,8 @@
 #import "PostCell.h"
 #import "VoteCell.h"
 #import "NSMutableArray+Shuffling.h"
-@interface VoteDetailVC ()<UITableViewDelegate, UITableViewDataSource, PostCellDelegate, ProfileCellDelegate>
+#import <FBSDKShareKit/FBSDKShareKit.h>
+@interface VoteDetailVC ()<UITableViewDelegate, UITableViewDataSource, PostCellDelegate, ProfileCellDelegate, FBSDKAppInviteDialogDelegate>
 
 
 @property(nonatomic, strong)BackendlessCollection * beCollection;
@@ -328,22 +329,48 @@
 
 -(void)onTappedShare:(ProfileCell *)cell user:(BackendlessUser *)user{
     
-    NSIndexPath * idp = [_tblView indexPathForCell:cell];
-    NSIndexPath * postIdp = [NSIndexPath indexPathForRow:idp.row-1 inSection:0];
+//    NSIndexPath * idp = [_tblView indexPathForCell:cell];
+//    NSIndexPath * postIdp = [NSIndexPath indexPathForRow:idp.row-1 inSection:0];
+//    
+//    
+//    PostCell  * postCell = (PostCell*)[_tblView cellForRowAtIndexPath:postIdp];
+//    NSURL * imgUrl = [NSURL URLWithString:postCell.post.photo];
+//    
+//    [[SocialPostManager sharedManager] GeneralShareText:_curContest.desc andImage:postCell.imgBack.image andUrl:[NSURL URLWithString:kAppDelegate.appStoreUrl] viewController:self imageUrl:imgUrl];
     
     
-    PostCell  * postCell = (PostCell*)[_tblView cellForRowAtIndexPath:postIdp];
-    NSURL * imgUrl = [NSURL URLWithString:postCell.post.photo];
     
-    [[SocialPostManager sharedManager] GeneralShareText:_curContest.desc andImage:postCell.imgBack.image andUrl:[NSURL URLWithString:kAppDelegate.appStoreUrl] viewController:self imageUrl:imgUrl];
+    FBSDKAppInviteContent *content =[[FBSDKAppInviteContent alloc] init];
+    content.appLinkURL = [NSURL URLWithString:@"https://itunes.apple.com/fr/app/donkeez/id1148625354?l=en&mt=8"];
+    //optionally set previewImageURL
+    content.appInvitePreviewImageURL = [NSURL URLWithString:@"http://donkeez.com/wp-content/uploads/2016/06/logo-donkeez-catch-phraseEN.png"];
+    
+    // Present the dialog. Assumes self is a view controller
+    // which implements the protocol `FBSDKAppInviteDialogDelegate`.
+    [FBSDKAppInviteDialog showFromViewController:self
+                                     withContent:content
+                                        delegate:self];
 }
 
 
 - (IBAction)onShare:(id)sender {
     
-    VoteCell  * cell = (VoteCell*)[_tblView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
-    NSURL * imgUrl = [NSURL URLWithString:_curContest.mark_image];
-        [[SocialPostManager sharedManager] GeneralShareText:_curContest.desc andImage:cell.imgBack.image andUrl:[NSURL URLWithString:kAppDelegate.appStoreUrl] viewController:self imageUrl:imgUrl];
+//    VoteCell  * cell = (VoteCell*)[_tblView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+//    NSURL * imgUrl = [NSURL URLWithString:_curContest.mark_image];
+//        [[SocialPostManager sharedManager] GeneralShareText:_curContest.desc andImage:cell.imgBack.image andUrl:[NSURL URLWithString:kAppDelegate.appStoreUrl] viewController:self imageUrl:imgUrl];
+    
+    
+    
+    FBSDKAppInviteContent *content =[[FBSDKAppInviteContent alloc] init];
+    content.appLinkURL = [NSURL URLWithString:@"https://itunes.apple.com/fr/app/donkeez/id1148625354?l=en&mt=8"];
+    //optionally set previewImageURL
+    content.appInvitePreviewImageURL = [NSURL URLWithString:@"http://donkeez.com/wp-content/uploads/2016/06/logo-donkeez-catch-phraseEN.png"];
+    
+    // Present the dialog. Assumes self is a view controller
+    // which implements the protocol `FBSDKAppInviteDialogDelegate`.
+    [FBSDKAppInviteDialog showFromViewController:self
+                                     withContent:content
+                                        delegate:self];
     
     
 }
@@ -353,6 +380,23 @@
     
     [kAppDelegate.mVC.navigationController popViewControllerAnimated:YES];
     
+    
+}
+
+
+
+
+
+#pragma mark - FBSDKAppInviteDialogDelegate
+
+- (void)appInviteDialog:(FBSDKAppInviteDialog *)appInviteDialog didCompleteWithResults:(NSDictionary *)results
+{
+    
+}
+
+
+- (void)appInviteDialog:(FBSDKAppInviteDialog *)appInviteDialog didFailWithError:(NSError *)error
+{
     
 }
 
