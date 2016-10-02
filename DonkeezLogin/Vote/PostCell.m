@@ -33,29 +33,29 @@
     [_lblLikes setTextColor:Color_Slider];
     
     [_btnLike setUserInteractionEnabled:NO];
-       [_post LikesOfUser:backendless.userService.currentUser success:^(NSInteger count, NSString * msg) {
-        if(count > 0){
-            [GD onMain:^{
-                _countOfLikes = count;
-                _lblLikes.text = [NSString stringWithFormat:@"%ld", (long)count];
+   [_post LikesOfUser:backendless.userService.currentUser success:^(NSInteger count, NSString * msg) {
+    if(count > 0){
+        [GD onMain:^{
+            _countOfLikes = count;
+            _lblLikes.text = [NSString stringWithFormat:@"%ld", (long)count];
 //                _lblLikes.hidden = NO;
-                
-                if(isSet(msg)){
-                    _isLikable = NO;
-                    _msgLikeInValid = msg;
-                    [_btnLike setImage:[UIImage imageNamed:@"like_fill.png"] forState:UIControlStateNormal];
-                }else{
-                    _isLikable = YES;
-                }
-//                [CYAnimation fadeIn:_viewLik andTime:0.2];
-            }];
             
-        }else{
-            _isLikable = YES;
-        }
-           [GD onMain:^{
-              [_btnLike setUserInteractionEnabled:YES];
-           }];
+            if(isSet(msg)){
+                _isLikable = NO;
+                _msgLikeInValid = msg;
+                [_btnLike setImage:[UIImage imageNamed:@"like_fill.png"] forState:UIControlStateNormal];
+            }else{
+                _isLikable = YES;
+            }
+//                [CYAnimation fadeIn:_viewLik andTime:0.2];
+        }];
+        
+    }else{
+        _isLikable = YES;
+    }
+       [GD onMain:^{
+          [_btnLike setUserInteractionEnabled:YES];
+       }];
     } failed:^(NSString *error, NSInteger errorCode) {
         NSLog(@"%@", error);
     }];
@@ -74,15 +74,16 @@
     
 }
 -(void)hideViewLike{
-    [GD onMain:^{
-     [CYAnimation fadeOut:_viewLik andTime:0.2];
-    }];
-    
+    if (_viewLik.hidden == NO) {
+        [GD onMain:^{
+         [CYAnimation fadeOut:_viewLik andTime:0.2];
+        }];
+    }
 }
 - (IBAction)onLike:(id)sender {
     
 //    [GD showSVHUDMask:YES];
-    if(!_isLikable){
+    if (!_isLikable) {
         
         if(isSet(_msgLikeInValid)){
             [GD ShowAlertViewTitle:@"" message:_msgLikeInValid VC:_parentVC Ok:nil];

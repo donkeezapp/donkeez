@@ -29,7 +29,6 @@
         
     }] mutableCopy];
     
-    
     NSPredicate *predicate = [NSPredicate predicateWithBlock:^BOOL(Post * _Nullable each, NSDictionary<NSString *,id> * _Nullable bindings) {
         return [each.is_valid boolValue];
     }];
@@ -59,13 +58,33 @@
     }
     [rankDict setObject:@(sortedPostList.count) forKey:@"total"];
     NSLog(@"Rank : %@", rankDict);
+    
+    
     return  rankDict;
+    
 }
 
 -(void)setCurPostData:(Post*)post isVote:(BOOL)isVote{
     
     _curPost = post;
     
+    
+    // FIXME - hotfix
+    
+    BOOL isThere = NO;
+    
+    for (Post *post in self.curContest.contest_posts) {
+        if ([post.objectId isEqualToString:self.curPost.objectId]) {
+            isThere = YES;
+            break;
+        }
+    }
+    
+    if (isThere == NO) {
+        [self.curContest.contest_posts addObject:self.curPost];
+    }
+    
+    // END FIXME
 
         
         if(isVote){
@@ -73,7 +92,7 @@
             
 //            NSInteger total = _curContest.contest_posts.count;
             NSDictionary * rankDict = [self GetRankOfPost:_curContest.contest_posts];
-            NSInteger total = [[rankDict objectForKey:@"total"] integerValue];
+            NSInteger total = [[rankDict allKeys] count];
             NSInteger curRank = [[rankDict objectForKey:_curPost.objectId] integerValue];
             
             _lblTime.text =[NSString stringWithFormat:@"%@ - %ld/%ld rank - %@", isSet(_curContest.tags)?_curContest.tags:@"", (long)(total - curRank +1), (long)total,   [GD getDuringofDate:_curContest.vote_end_date]];

@@ -31,12 +31,6 @@
     // Do any additional setup after loading the view from its nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
 -(NSDictionary * )GetRankOfPost:(NSArray <Post*>* )postList{
     
     NSMutableArray * sortedPostList =[[ postList sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
@@ -116,10 +110,6 @@
     
     if (isThere == NO) {
         [self.curContest.contest_posts addObject:self.curPost];
-        
-        // Save it
-        id<IDataStore> ds = [backendless.persistenceService of:[Contest class]];
-        [ds save:self.curContest];
     }
     
     
