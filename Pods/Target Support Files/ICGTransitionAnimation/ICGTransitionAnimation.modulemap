@@ -1,0 +1,6 @@
+framework module ICGTransitionAnimation {
+  umbrella header "ICGTransitionAnimation-umbrella.h"
+
+  export *
+  module * { export * }
+}

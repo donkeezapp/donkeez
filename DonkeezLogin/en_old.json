@@ -1,0 +1,138 @@
+{
+    "January": "January",
+    "February": "February",
+    "March": "March",
+    "April": "April",
+    "May": "May",
+    "June": "June",
+    "July": "July",
+    "August": "August",
+    "September": "September",
+    "October": "October",
+    "November": "November",
+    "December": "December",
+    "TODAY": "Today",
+    "YESTERDAY": "Yesterday",
+    "TOMORROW": "Tomorrow",
+    
+    "Login":"Login",
+    "Sign Up":"Sign up",
+    "Welcome":"Welcome",
+    "Sign up":"Sign up",
+    "FIRST NAME":"FIRST NAME",
+    "LAST NAME":"LAST NAME",
+    "Next":"Next",
+    "Back":"Back",
+    "EMAIL":"EMAIL",
+    "Email":"Email",
+    "PASSWORD":"PASSWORD",
+    "CONFIRM PASSWORD":"CONFIRM PASSWORD",
+"confirm password":"confirm password",
+    "BIRTHDAY":"BIRTHDAY",
+    "SEX": "GENDER",
+    
+    "Come get some!":"Come get some !",
+    "Protect yourself!":"Protect yourself!",
+    "Last step :D":"Last step :D",
+    
+    "Great to see you!":"Great to see you !",
+    "VALIDATE":"GO !",
+    
+    "Enter the email.":"Enter the email",
+    "Enter the password.":"Enter the password",
+    
+    "Enter the correct password.":"Enter the correct password",
+    "Select Date":"Select date",
+    "Male":"Male",
+    "Female":"Female",
+    "SuccessRegistration":"Success registration !",
+    "Post":"Post",
+    "Vote":"Vote",
+    "Win":"Win",
+    
+    "Please read the terams and check. ": "Accept terms before continue",
+    "Failed to log in, Please try again.":"Failed to log in, Please try again.",
+    
+    "Select Gender":"Select Gender",
+    
+    "Photo":"Photo",
+    "Upload":"Upload",
+    "Post":"Post",
+    "You can vote again after":"You can vote again after",
+    "Failed to like , try again after a moment.":"Failed to like , take a deep breath and try again.",
+    
+    "Posting Time":"Posting Time",
+    "Voting Time":"Voting Time",
+    "Ended":"Ended",
+    
+    "Profile Pic":"Profile pic",
+    "First Name":"First name",
+    "Last Name":"Last name",
+    "Email":"Email",
+    "Password":"Password",
+    "Birthdate":"Birthdate",
+    "Sex":"Gender",
+    "Failed to upload the avatar, try again after a moment.":"Failed to upload profile pic. Try again.",
+    
+    
+    "POSTING TIME":"Posting Time",
+    "VOTING TIME":"Voting Time",
+    
+    "Input the first name.":"Enter the first name",
+    "Input the last name.":"Enter the last name",
+    "Input the email.":"Enter the email",
+    "Input the password.":"Enter the password",
+    "Select Date":"Select Date",
+    "Select Gender":"Select Gender",
+    "Failed to logout.":"Failed to logout",
+    
+    "Unable to register user, User already exists.":"Unable to register user. Email already exists.",
+    "Connect with Facebook":"Connect with Facebook",
+    
+   "Signup":"Sign up",
+    "Great to see you!":"Great to see you !",
+    
+    "email" :"email",
+    "password":"password",
+    "I AGREE TERMS":"I agree terms",
+    "Change my pic":"Change my pic",
+    
+    
+    "Please input Email.":"Enter your email.",
+    "Check your email":"Check your email",
+    "Failed to remove, please try again.":"Failed to delete the pic. Please try again.",
+    "Will you remove this post?":"Do you really want to delete your pic?",
+    
+    "There is no products.":"No details on reward",
+    
+    "Select your photo contest, and post a picture":"Select your photo contest, and post a picture",
+    "Vote for the best pictures":"Vote for the best pictures",
+    "Get the most votes to win rewards, and reach the wall of fame!":"Get the most votes to win rewards, and reach the wall of fame !",
+    
+    "You can not like this post now.":"You can not like this post now.",
+    
+    "Data is invalid, please try again.":"Data is invalid, please try again.",
+    
+    "There is no win post. ":"Winner is anonymous !",
+    "Successfully uploaded":"Yiha ! Your photo will participate in the contest. Once the Post countdown runs out, you will find your picture on Vote page. Then you will have one week to get a max likes :D",
+    
+    "Notification":"Notification",
+    
+    "Edit Profile":"Edit Profile",
+    "Enter the email correctly.":"Enter the email correctly.",
+
+"I forgot my password":"I forgot my password",
+"Failed to reset password.":"Failed to reset password. try again.",
+    "first name":"first name",
+    "My Account":"My Account",
+    
+    "CONTEST PARTICIPATED":"CONTEST PARTICIPATED",
+    "FAQ":"FAQ",
+    "CGU":"CGU",
+    "Change my Password":"Change my Password",
+    
+    "Where do you want to choose your image":"Where do you want to choose your image",
+    "Gallery":"Gallery",
+    "Camera":"Camera",
+    "Progress":"Progress",
+}

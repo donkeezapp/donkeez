@@ -1,0 +1,33 @@
+PODS:
+  - BEMCheckBox (1.2.1)
+  - ICGTransitionAnimation (1.02)
+  - MCLocalization (1.1.6)
+  - MGSwipeTableCell (1.5.5)
+  - SVProgressHUD (2.0.3)
+
+DEPENDENCIES:
+  - BEMCheckBox
+  - ICGTransitionAnimation (~> 1.02)
+  - MCLocalization
+  - MGSwipeTableCell
+  - SVProgressHUD (from `https://github.com/SVProgressHUD/SVProgressHUD.git`)
+
+EXTERNAL SOURCES:
+  SVProgressHUD:
+    :git: https://github.com/SVProgressHUD/SVProgressHUD.git
+
+CHECKOUT OPTIONS:
+  SVProgressHUD:
+    :commit: ba369a13136be785e3ca90c162b2c15ced68b719
+    :git: https://github.com/SVProgressHUD/SVProgressHUD.git
+
+SPEC CHECKSUMS:
+  BEMCheckBox: 264b8b72aa92adbfefa265cc58a0cdb86b207b9f
+  ICGTransitionAnimation: 6b3e69591cb02400071fb8f7a79cb3324d7259da
+  MCLocalization: 9e4f3c5f6a7aa079e7ac5c89893f76b582bbf30a
+  MGSwipeTableCell: bafeb5f351124544c9364ecbdf24c7b06a37d340
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+
+PODFILE CHECKSUM: a8c8ac6058b2492bb4157198729f19bd94affd90
+
+COCOAPODS: 1.0.1

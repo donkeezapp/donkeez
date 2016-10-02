@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CountryPickerVC">
+            <connections>
+                <outlet property="btnDone" destination="0wB-qd-7z2" id="1Ud-MF-xBt"/>
+                <outlet property="pickerCountry" destination="GEA-3B-EVw" id="nQB-QA-puc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BJU-6n-0hA">
+                    <rect key="frame" x="0.0" y="308" width="320" height="260"/>
+                    <subviews>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GEA-3B-EVw" customClass="CountryPicker">
+                            <rect key="frame" x="0.0" y="49" width="320" height="211"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="211" id="eei-KX-jty"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="Xc7-vo-IOu"/>
+                            </connections>
+                        </pickerView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wB-qd-7z2">
+                            <rect key="frame" x="266" y="8" width="46" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="46" id="b50-Tr-bnP"/>
+                                <constraint firstAttribute="height" constant="30" id="z3u-bK-geg"/>
+                            </constraints>
+                            <state key="normal" title="Done"/>
+                            <connections>
+                                <action selector="onDone:" destination="-1" eventType="touchUpInside" id="Qny-3j-V0I"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="0wB-qd-7z2" secondAttribute="trailing" constant="8" id="3fS-2f-adn"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="260" id="9sr-iu-jGa"/>
+                        <constraint firstAttribute="height" constant="260" id="EI5-RW-2ex"/>
+                        <constraint firstItem="0wB-qd-7z2" firstAttribute="top" secondItem="BJU-6n-0hA" secondAttribute="top" constant="8" id="Ggp-Vk-vSj"/>
+                        <constraint firstAttribute="bottom" secondItem="GEA-3B-EVw" secondAttribute="bottom" id="LAq-Eh-ELg"/>
+                        <constraint firstItem="GEA-3B-EVw" firstAttribute="leading" secondItem="BJU-6n-0hA" secondAttribute="leading" id="U8K-wm-7cu"/>
+                        <constraint firstAttribute="trailing" secondItem="GEA-3B-EVw" secondAttribute="trailing" id="onW-kt-GiF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="BJU-6n-0hA" secondAttribute="trailing" id="9bF-fp-O4D"/>
+                <constraint firstItem="BJU-6n-0hA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HMI-Vo-qxp"/>
+                <constraint firstAttribute="bottom" secondItem="BJU-6n-0hA" secondAttribute="bottom" id="JMa-kf-3PF"/>
+            </constraints>
+            <point key="canvasLocation" x="465" y="497"/>
+        </view>
+    </objects>
+</document>

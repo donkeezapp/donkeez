@@ -1,0 +1,139 @@
+{
+    "January": "Janvier",
+    "February": "Février",
+    "March": "Mars",
+    "April": "Avril",
+    "May": "Mai",
+    "June": "Juin",
+    "July": "Juillet",
+    "August": "Août",
+    "September": "Septembre",
+    "October": "Octobre",
+    "November": "Novembre",
+    "December": "Décembre",
+    "TODAY": "Aujourd’hui",
+    "YESTERDAY": "Hier",
+    "TOMORROW": "Demain",
+    
+    "Login":"Login",
+    "Sign Up":"Inscription",
+    "Welcome":"Bienvenue",
+    "Sign up":"Inscription",
+    "FIRST NAME":"PRÉNOM",
+    "LAST NAME":"NOM",
+    "Next":"Suivant",
+    "Back":"Retour",
+    "EMAIL":"EMAIL",
+    "Email":"Email",
+    "PASSWORD":"MOT DE PASSE",
+    "CONFIRM PASSWORD":"CONFIRMER MOT DE PASSE",
+    "confirm password":"confirmer mot de passe",
+    "BIRTHDAY":"Date de naissance",
+    "SEX":"Sexe",
+    
+    "Come get some!":"Come get some !",
+    "Protect yourself!":"Protect yourself !",
+    "Last step :D":"Dernière étape :D",
+    
+    "Great to see you!":"Content de te voir !",
+    "VALIDATE":"GO !",
+    
+    "Enter the email.":"Entre ton email",
+    "Enter the password.":"Entre ton mot de passe",
+    
+    "Enter the correct password.":"Mot de passe incorrect. Réessaye.",
+    "Select Date":"Sélectionne la date",
+    "Male":"Homme",
+    "Female":"Femme",
+    "SuccessRegistration":"Inscription réussie !",
+    "Post":"Post",
+    "Vote":"Vote",
+    "Win":"Win",
+    
+    "Please read the terams and check.":"Accepte les CGU avant de continuer",
+    "Failed to log in, Please try again.":"Erreur lors de la connexion. Réessaye.",
+    
+    "Select Gender":"Ton sexe",
+    
+    "Photo":"Photo",
+    "Upload":"Upload",
+    "Post":"Post",
+    "You can vote again after":"Tu pourras voter à nouveau dans",
+    "Failed to like , try again after a moment.":"Vote non pris en compte ! Réessaye.",
+    
+    "Posting Time":"Phase de Post",
+    "Voting Time":"Phase de Vote",
+    "Ended":"Terminé",
+    
+    "Profile Pic":"Photo de profil",
+    "First Name":"Prénom",
+    "Last Name":"Nom",
+    "Email":"Email",
+    "Password":"Mot de passe",
+    "Birthdate":"Date de naissance",
+    "Sex":"Sexe",
+    "Failed to upload the avatar, try again after a moment.":"La photo de profil n’a pas pu être uploadée. Réessaye.",
+    
+    
+    "POSTING TIME":"Phase de Post",
+    "VOTING TIME":"Phase de Vote",
+    
+    "Input the first name.":"Entre ton prénom",
+    "Input the last name.":"Entre ton nom",
+    "Input the email.":"Entre ton email",
+    "Input the password.":"Entre ton mot de passe",
+    "Select Date":"Sélectionne la date",
+    "Select Gender":"Ton sexe",
+    "Failed to logout.":"Erreur lors de la déconnexion",
+    
+    "Unable to register user, User already exists.":"Impossible de s’inscrire. Ce mail existe déjà.",
+    "Connect with Facebook":"Login avec Facebook",
+    
+    "Signup":"Inscription",
+    "Great to see you!":"Ravi de te voir !",
+    
+    "email" :"email",
+    "password":"mot de passe",
+    "I AGREE TERMS":"J’accepte les CGU",
+    "Change my pic":"Changer ma photo",
+    
+    
+    "Please input Email.":"Entre ton email",
+    "Check your email":"Vérifieton email",
+    "Failed to remove, please try again.":"Erreur lors de la suppression. Essaye encore.",
+    "Will you remove this post?":"Veux-tu vraiment supprimer ta photo ?",
+    
+    "There is no products.":"Pas de détails sur le cadeau",
+    
+    "Select your photo contest, and post a picture":"Choisis ton concours, et post une photo",
+    "Vote for the best pictures":"Vote pour les photos les + cools",
+    "Get the most votes to win rewards, and reach the wall of fame!":"Obtiens le max de likes pour gagner des cadeaux, et rejoins le wall of fame !",
+    
+    "You can not like this post now.":"Tu ne peux pas liker cette photo pour l’instant.",
+    
+    "Data is invalid, please try again.":"Donnée incorrecte, essaye encore.",
+    
+    "There is no win post.":"Gagnant anonyme !",
+    "Successfully uploaded":"Yiha ! Ta photo participe au concours. Une fois le compte à rebours Post terminé, tu retrouveras ta photo dans la page Vote. Tu auras alors une semaine pour obtenir le max de likes :D",
+    
+    "Notification":"Notification",
+    
+    "Edit Profile":"Modifier le profil",
+    "Enter the email correctly.": "Email incorrect. Réessaye.",
+    
+    "I forgot my password":"Mot de passe oublié",
+    "Failed to reset password.":"Erreur lors du chargement du nouveau mot de passe. Réessaye.",
+    
+    "first name":"prénom",
+    "My Account":"My Account",
+    
+    "CONTEST PARTICIPATED":"CONTEST PARTICIPATED",
+    "FAQ":"FAQ",
+    "CGU":"CGU",
+    "Change my Password":"Change my Password",
+    
+    "Where do you want to choose your image":"Where do you want to choose your image",
+    "Gallery":"Gallery",
+    "Camera":"Camera",
+    "Progress":"Progress",
+}
