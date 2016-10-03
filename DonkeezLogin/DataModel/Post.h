@@ -19,5 +19,5 @@
 @property (nonatomic, strong) Contest *contest;
 
 -(void)LikewithLikeableUser:(BackendlessUser *)user success:(void(^ _Nullable)())success failed:(void(^ _Nonnull)(NSString* _Nonnull error , NSInteger errorCode))failed;
--(void)LikesOfUser:(BackendlessUser * _Nonnull)user success:(void(^ _Nullable)(NSInteger count, NSString * _Nonnull msg))success failed:(void(^_Nullable)(NSString * _Nullable error, NSInteger errorCode))failed;
+-(void)LikesOfUser:(BackendlessUser * _Nonnull)user success:(void(^ _Nullable)(NSInteger count, NSString * _Nonnull msg, Post * _Nonnull post))success failed:(void(^_Nullable)(NSString * _Nullable error, NSInteger errorCode))failed;
 @end

@@ -33,12 +33,15 @@
     [_lblLikes setTextColor:Color_Slider];
     
     [_btnLike setUserInteractionEnabled:NO];
-   [_post LikesOfUser:backendless.userService.currentUser success:^(NSInteger count, NSString * msg) {
+   [_post LikesOfUser:backendless.userService.currentUser success:^(NSInteger count, NSString * msg, Post *post) {
+       if (post != self.post) {
+           return;
+       }
+       
     if(count > 0){
         [GD onMain:^{
             _countOfLikes = count;
             _lblLikes.text = [NSString stringWithFormat:@"%ld", (long)count];
-//                _lblLikes.hidden = NO;
             
             if(isSet(msg)){
                 _isLikable = NO;
@@ -47,7 +50,6 @@
             }else{
                 _isLikable = YES;
             }
-//                [CYAnimation fadeIn:_viewLik andTime:0.2];
         }];
         
     }else{

@@ -3,7 +3,7 @@
 #import "Likes.h"
 @implementation Post
 
--(void)LikesOfUser:(BackendlessUser *)user success:(void(^ _Nullable)(NSInteger count, NSString * msg))success failed:(void(^)(NSString * error, NSInteger errorCode))failed{
+-(void)LikesOfUser:(BackendlessUser *)user success:(void(^ _Nullable)(NSInteger count, NSString * msg, Post *post))success failed:(void(^)(NSString * error, NSInteger errorCode))failed{
     
     BackendlessDataQuery *query = [BackendlessDataQuery query];
     query.whereClause = [NSString stringWithFormat:@"userid = \'%@\' AND postid = \'%@\'", user.userId, _objectId];
@@ -20,7 +20,7 @@
             NSTimeInterval oneDay = 24*3600;
 //                        NSTimeInterval oneDay = 5;
             if(-interval >= oneDay){
-                success(likes.likes.integerValue, @"");
+                success(likes.likes.integerValue, @"", self);
 
             }else{
                 NSTimeInterval remain = oneDay + interval;
@@ -28,12 +28,12 @@
                 NSString * msg = [NSString stringWithFormat:@"%@ %@",MCLocalString(@"You can vote again after") ,[GD getDuringofDate:nextVotetime]  ];
                
 
-                success( likes.likes.integerValue, msg);
+                success( likes.likes.integerValue, msg, self);
 
             }
             
           }else{
-            success( 0, @"");
+            success( 0, @"", self);
         }
         
     } error:^(Fault * fault) {
