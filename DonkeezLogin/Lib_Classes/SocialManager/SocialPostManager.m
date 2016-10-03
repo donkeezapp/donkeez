@@ -1,6 +1,7 @@
 
 
 #import "SocialPostManager.h"
+#import <FBSDKShareKit/FBSDKShareKit.h>
 
 @implementation SocialPostManager
 
@@ -107,6 +108,22 @@
 //    [[NSNotificationCenter defaultCenter] postNotificationName:SendEmailOrSMSDidEndNotification object:self ];
         
     }];
+}
+
+- (void)inviteToFacebook
+{
+    UIViewController *viewController = [UIApplication sharedApplication].keyWindow.rootViewController;
+    
+    FBSDKAppInviteContent *content =[[FBSDKAppInviteContent alloc] init];
+    content.appLinkURL = [NSURL URLWithString:@"https://l.facebook.com/l.php?u=https%3A%2F%2Ffb.me%2F1298326973510807&h=XAQGQD5Uz"];
+    //optionally set previewImageURL
+    content.appInvitePreviewImageURL = [NSURL URLWithString:@"http://donkeez.com/wp-content/uploads/2016/06/logo-donkeez-catch-phraseEN.png"];
+    
+    // Present the dialog. Assumes self is a view controller
+    // which implements the protocol `FBSDKAppInviteDialogDelegate`.
+    [FBSDKAppInviteDialog showFromViewController:viewController
+                                     withContent:content
+                                        delegate:nil];
 }
 
 - (void)inviteToFacebook:(UIViewController *)viewController IMAGE:(UIImage*)postImage MSG:(NSString*)msg andURL:(NSURL*)url

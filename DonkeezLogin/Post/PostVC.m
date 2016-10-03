@@ -399,8 +399,9 @@
 -(void)onTappedSharing:(ContestCell *)cell contest:(Contest *)contData{
 
     
-    NSURL * imgUrl = [NSURL URLWithString:contData.mark_post];
-    [[SocialPostManager sharedManager] GeneralShareText:contData.desc andImage:cell.imgBack.image andUrl:[NSURL URLWithString:kAppDelegate.appStoreUrl] viewController:kAppDelegate.mVC imageUrl:imgUrl];
+    [[SocialPostManager sharedManager] inviteToFacebook];
+//    NSURL * imgUrl = [NSURL URLWithString:contData.mark_post];
+//    [[SocialPostManager sharedManager] GeneralShareText:contData.desc andImage:cell.imgBack.image andUrl:[NSURL URLWithString:kAppDelegate.appStoreUrl] viewController:kAppDelegate.mVC imageUrl:imgUrl];
     
 }
 -(void)onTappedView:(ContestCell *)cell contest:(Contest *)contData

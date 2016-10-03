@@ -19,4 +19,7 @@
 
 -(void)GeneralShareText:(NSString *)text andImage:(UIImage *)image andUrl:(NSURL *)url viewController:(UIViewController*)vc  imageUrl:(NSURL*)imgUrl;
 - (void)postToFacebook:(UIViewController *)viewController IMAGE:(UIImage*)postImage MSG:(NSString*)msg URL:(NSURL*)url;
+
+- (void)inviteToFacebook;
+
 @end

@@ -323,7 +323,6 @@
         [_tblView beginUpdates];
         [_tblView insertRowsAtIndexPaths:@[newIdp] withRowAnimation:UITableViewRowAnimationAutomatic];
         [_tblView endUpdates];
-
     
 }
 
@@ -338,18 +337,7 @@
 //    
 //    [[SocialPostManager sharedManager] GeneralShareText:_curContest.desc andImage:postCell.imgBack.image andUrl:[NSURL URLWithString:kAppDelegate.appStoreUrl] viewController:self imageUrl:imgUrl];
     
-    
-    
-    FBSDKAppInviteContent *content =[[FBSDKAppInviteContent alloc] init];
-    content.appLinkURL = [NSURL URLWithString:@"https://itunes.apple.com/fr/app/donkeez/id1148625354?l=en&mt=8"];
-    //optionally set previewImageURL
-    content.appInvitePreviewImageURL = [NSURL URLWithString:@"http://donkeez.com/wp-content/uploads/2016/06/logo-donkeez-catch-phraseEN.png"];
-    
-    // Present the dialog. Assumes self is a view controller
-    // which implements the protocol `FBSDKAppInviteDialogDelegate`.
-    [FBSDKAppInviteDialog showFromViewController:self
-                                     withContent:content
-                                        delegate:self];
+    [[SocialPostManager sharedManager] inviteToFacebook];
 }
 
 
@@ -360,19 +348,7 @@
 //        [[SocialPostManager sharedManager] GeneralShareText:_curContest.desc andImage:cell.imgBack.image andUrl:[NSURL URLWithString:kAppDelegate.appStoreUrl] viewController:self imageUrl:imgUrl];
     
     
-    
-    FBSDKAppInviteContent *content =[[FBSDKAppInviteContent alloc] init];
-    content.appLinkURL = [NSURL URLWithString:@"https://itunes.apple.com/fr/app/donkeez/id1148625354?l=en&mt=8"];
-    //optionally set previewImageURL
-    content.appInvitePreviewImageURL = [NSURL URLWithString:@"http://donkeez.com/wp-content/uploads/2016/06/logo-donkeez-catch-phraseEN.png"];
-    
-    // Present the dialog. Assumes self is a view controller
-    // which implements the protocol `FBSDKAppInviteDialogDelegate`.
-    [FBSDKAppInviteDialog showFromViewController:self
-                                     withContent:content
-                                        delegate:self];
-    
-    
+    [[SocialPostManager sharedManager] inviteToFacebook];
 }
 
 
