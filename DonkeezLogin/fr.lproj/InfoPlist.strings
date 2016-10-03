@@ -1,2 +1,2 @@
-/* Localized versions of Info.plist keys */
-
+NSCameraUsageDescription = "Appuis sur OK pour autoriser l'accès à l'appareil photo.";
+NSPhotoLibraryUsageDescription = "Appuis sur OK pour autoriser l'accès à la pellicule.";

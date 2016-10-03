@@ -59,8 +59,6 @@
 	<string>Appuis sur OK pour autoriser l&apos;accès à l&apos;appareil photo.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Appuis sur OK pour autoriser l&apos;accès à la pellicule.</string>
-	<key>LSApplicationCategoryType</key>
-	<string></string>
 	<key>UILaunchStoryboardName</key>
 	<string>Launch Screen</string>
 	<key>UIMainStoryboardFile</key>

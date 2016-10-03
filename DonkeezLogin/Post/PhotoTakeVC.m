@@ -42,7 +42,6 @@
     
     _session = [AVCaptureSession new];
     _session.sessionPreset = AVCaptureSessionPresetHigh;
-//    _session.sessionPreset = AVCaptureSessionPresetPhoto;
      AVCaptureDevice * backCamera = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     
     NSError * error;
@@ -68,7 +67,6 @@
     
     _videoPreviewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:_session];
     _videoPreviewLayer.videoGravity =AVLayerVideoGravityResizeAspectFill;
-//    _videoPreviewLayer.connection.videoOrientation =  AVCaptureVideoOrientationPortrait;
     
     _videoPreviewLayer.frame = CGRectMake(0, 0, [GD GetScreenSize].width, [GD GetScreenSize].width) ;
     

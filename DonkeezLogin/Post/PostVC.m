@@ -50,6 +50,8 @@
     
     _tblView.backgroundColor = [UIColor whiteColor];
     // Do any additional setup after loading the view.
+    
+    
 }
 -(void)dealloc{
     

@@ -11,7 +11,6 @@
 		3FE210511D6F75E70020F9FF /* like_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FE210501D6F75E70020F9FF /* like_white.png */; };
 		912BAE3318EEEC9800C1CEA3 /* NSString+Date.m in Sources */ = {isa = PBXBuildFile; fileRef = 912BAE3218EEEC9800C1CEA3 /* NSString+Date.m */; };
 		916D2A78191802790016DE28 /* RestorePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916D2A77191802790016DE28 /* RestorePasswordViewController.m */; };
-		91B1DD9A18B21E7A00186809 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91B1DD9818B21E7A00186809 /* InfoPlist.strings */; };
 		91B1DD9C18B21E7A00186809 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B1DD9B18B21E7A00186809 /* main.m */; };
 		91B1DDA018B21E7A00186809 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B1DD9F18B21E7A00186809 /* AppDelegate.m */; };
 		91B1DDA518B21E7A00186809 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91B1DDA418B21E7A00186809 /* Images.xcassets */; };
@@ -21,6 +20,7 @@
 		91B1DE7618B21ED700186809 /* CommLibiOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B1DDF918B21ED700186809 /* CommLibiOS.a */; };
 		91B1DE8618B21EFE00186809 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B1DE8518B21EFE00186809 /* SystemConfiguration.framework */; };
 		B52A71D81D9D6542002B2A6D /* Donkeez-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B52A71D61D9D633E002B2A6D /* Donkeez-Info.plist */; };
+		B54547B91DA29F1200E54117 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B54547B71DA29F1200E54117 /* InfoPlist.strings */; };
 		B5FB56C81D9A6EF8002B4E9D /* OneSignal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FB56C71D9A6EF8002B4E9D /* OneSignal.framework */; };
 		B747DF091D6E05270010EFFB /* notif-sound-donkeez.aiff in Resources */ = {isa = PBXBuildFile; fileRef = B747DF081D6E05270010EFFB /* notif-sound-donkeez.aiff */; };
 		DA27BEF87962754430DDD92A /* Pods_Donkeez.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 916639D0CE94395FA064BEB9 /* Pods_Donkeez.framework */; };
@@ -315,7 +315,6 @@
 		916D2A76191802790016DE28 /* RestorePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestorePasswordViewController.h; sourceTree = "<group>"; };
 		916D2A77191802790016DE28 /* RestorePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestorePasswordViewController.m; sourceTree = "<group>"; };
 		91B1DD8A18B21E7A00186809 /* donkeez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = donkeez.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		91B1DD9918B21E7A00186809 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		91B1DD9B18B21E7A00186809 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		91B1DD9D18B21E7A00186809 /* Donkeez-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Donkeez-Prefix.pch"; sourceTree = "<group>"; };
 		91B1DD9E18B21E7A00186809 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -388,9 +387,9 @@
 		91B1DE0F18B21ED700186809 /* Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Types.h; sourceTree = "<group>"; };
 		91B1DE1018B21ED700186809 /* WeborbClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeborbClient.h; sourceTree = "<group>"; };
 		91B1DE8518B21EFE00186809 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		B52A71D41D9D6307002B2A6D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B52A71D51D9D633E002B2A6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = "en.lproj/Donkeez-Info.plist"; sourceTree = "<group>"; };
 		B52A71D71D9D6347002B2A6D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = fr; path = "fr.lproj/Donkeez-Info.plist"; sourceTree = "<group>"; };
+		B54547B81DA29F1200E54117 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B5DADE561D9A7F0D006DFD3C /* donkeez.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = donkeez.entitlements; sourceTree = SOURCE_ROOT; };
 		B5FB56C71D9A6EF8002B4E9D /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OneSignal.framework; sourceTree = "<group>"; };
 		B747DF081D6E05270010EFFB /* notif-sound-donkeez.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = "notif-sound-donkeez.aiff"; sourceTree = "<group>"; };
@@ -933,6 +932,7 @@
 		91B1DD9618B21E7A00186809 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B54547B71DA29F1200E54117 /* InfoPlist.strings */,
 				E54C57F31D1AB03000690055 /* AccountKit.framework */,
 				E54C57F41D1AB03000690055 /* AccountKitStrings.bundle */,
 				E54C57F51D1AB03000690055 /* Bolts.framework */,
@@ -944,7 +944,6 @@
 				E54C57FB1D1AB03000690055 /* FBSDKMessengerShareKit.framework */,
 				E54C57FC1D1AB03000690055 /* FBSDKShareKit.framework */,
 				B52A71D61D9D633E002B2A6D /* Donkeez-Info.plist */,
-				91B1DD9818B21E7A00186809 /* InfoPlist.strings */,
 				91B1DD9B18B21E7A00186809 /* main.m */,
 				91B1DD9D18B21E7A00186809 /* Donkeez-Prefix.pch */,
 			);
@@ -2060,6 +2059,7 @@
 				E5EBB4611D3B8356004BCA1C /* intro1.PNG in Resources */,
 				E59D6F591D1BDB58008F49DB /* WinCell.xib in Resources */,
 				E5DBAC421D1B2F3D00A0A76A /* comegetsome.png in Resources */,
+				B54547B91DA29F1200E54117 /* InfoPlist.strings in Resources */,
 				E59D6F201D1B7F6A008F49DB /* signup_greate_seeyou.png in Resources */,
 				E5619DB91D34CCC40055AA64 /* more_hor.png in Resources */,
 				E5DBAAE31D1B180E00A0A76A /* bg.png in Resources */,
@@ -2069,8 +2069,8 @@
 				E5AAABC61D378B0400841DF6 /* small_eye.png in Resources */,
 				E5AAAB931D36DE4B00841DF6 /* VoteCell.xib in Resources */,
 				E5AAABBF1D37815900841DF6 /* cont_det_title.png in Resources */,
-				91B1DD9A18B21E7A00186809 /* InfoPlist.strings in Resources */,
 				E5B3055B1D49D11300F4D79D /* error.png in Resources */,
+				B52A71D81D9D6542002B2A6D /* Donkeez-Info.plist in Resources */,
 				E5AAABD91D38307A00841DF6 /* EditProfileVC.xib in Resources */,
 				E59D6F881D1C6073008F49DB /* Icon-Small@3x.png in Resources */,
 				E58901551D44033A003C5D1A /* en.json in Resources */,
@@ -2087,7 +2087,6 @@
 				E59D6F3E1D1BA1C2008F49DB /* menu.png in Resources */,
 				E5AAAB9B1D36E83000841DF6 /* like_fill.png in Resources */,
 				E5B305AD1D4A3A6600F4D79D /* icon_apply.png in Resources */,
-				B52A71D81D9D6542002B2A6D /* Donkeez-Info.plist in Resources */,
 				E5619DCF1D357DFF0055AA64 /* PhotoTakeVC.xib in Resources */,
 				E58901481D43487C003C5D1A /* main_mark_52x45.png in Resources */,
 				E5DBABFD1D1B1C8300A0A76A /* IQKeyboardManager.bundle in Resources */,
@@ -2387,15 +2386,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		91B1DD9818B21E7A00186809 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				91B1DD9918B21E7A00186809 /* en */,
-				B52A71D41D9D6307002B2A6D /* fr */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		B52A71D61D9D633E002B2A6D /* Donkeez-Info.plist */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -2403,6 +2393,14 @@
 				B52A71D71D9D6347002B2A6D /* fr */,
 			);
 			name = "Donkeez-Info.plist";
+			sourceTree = "<group>";
+		};
+		B54547B71DA29F1200E54117 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B54547B81DA29F1200E54117 /* fr */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		E59D6F2E1D1B913F008F49DB /* MainStoryboard.storyboard */ = {

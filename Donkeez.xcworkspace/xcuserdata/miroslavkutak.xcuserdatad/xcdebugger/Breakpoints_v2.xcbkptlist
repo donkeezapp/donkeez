@@ -84,12 +84,12 @@
                   moduleName = "donkeez"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/miroslavkutak/Downloads/Donkeez%202/DonkeezLogin/DonkeezLogin/Profile/ProfileTimeCell.m"
-                  timestampString = "497139009.90953"
+                  timestampString = "497196926.840645"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "22"
                   endingLineNumber = "22"
-                  offsetFromSymbolStart = "82">
+                  offsetFromSymbolStart = "75">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -99,12 +99,12 @@
                   moduleName = "donkeez"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/miroslavkutak/Downloads/Donkeez%202/DonkeezLogin/DonkeezLogin/Profile/ProfileTimeCell.m"
-                  timestampString = "497139009.912838"
+                  timestampString = "497196926.844351"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "24"
                   endingLineNumber = "24"
-                  offsetFromSymbolStart = "44">
+                  offsetFromSymbolStart = "69">
                </Location>
             </Locations>
          </BreakpointContent>
