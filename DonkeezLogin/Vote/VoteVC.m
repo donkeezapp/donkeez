@@ -326,12 +326,13 @@
 
 -(void)onTappedSharing:(ContestCell *)cell contest:(Contest *)contData{
     
-    NSIndexPath * idp = [_tblView indexPathForCell:cell];
-    
-    ContestCell * curcell = (ContestCell*)[_tblView cellForRowAtIndexPath:idp];
-    NSURL * imgurl = [NSURL URLWithString:contData.mark_post];
-//    [[SocialPostManager sharedManager] postToFacebook:self IMAGE:curcell.imgBack.image MSG:@""];
-    [[SocialPostManager sharedManager] GeneralShareText:contData.desc andImage:curcell.imgBack.image andUrl:[NSURL URLWithString:kAppDelegate.appStoreUrl] viewController:kAppDelegate.mVC imageUrl:imgurl];
+    [[SocialPostManager sharedManager] inviteToFacebook];
+//    NSIndexPath * idp = [_tblView indexPathForCell:cell];
+//    
+//    ContestCell * curcell = (ContestCell*)[_tblView cellForRowAtIndexPath:idp];
+//    NSURL * imgurl = [NSURL URLWithString:contData.mark_post];
+////    [[SocialPostManager sharedManager] postToFacebook:self IMAGE:curcell.imgBack.image MSG:@""];
+//    [[SocialPostManager sharedManager] GeneralShareText:contData.desc andImage:curcell.imgBack.image andUrl:[NSURL URLWithString:kAppDelegate.appStoreUrl] viewController:kAppDelegate.mVC imageUrl:imgurl];
 }
 -(void)onTappedView:(ContestCell *)cell contest:(Contest *)contData
 {

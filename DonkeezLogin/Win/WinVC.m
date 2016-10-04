@@ -426,19 +426,21 @@
 }
 -(void)onTappedShare:(ProfileCell *)cell user:(BackendlessUser *)user{
     
-    NSIndexPath * idp = [_tblView indexPathForCell:cell];
-    NSIndexPath * postIdp = [NSIndexPath indexPathForRow:idp.row-1 inSection:0];
-    
-    
-    WinVCCell  * wvCell = (WinVCCell*)[_tblView cellForRowAtIndexPath:postIdp];
-    NSURL * imgUrl = [NSURL URLWithString:wvCell.winPost.photo];
-    [[SocialPostManager sharedManager] GeneralShareText:wvCell.curContest.desc andImage:wvCell.imgPhoto.image andUrl:[NSURL URLWithString:kAppDelegate.appStoreUrl] viewController:kAppDelegate.mVC imageUrl:imgUrl];
+//    NSIndexPath * idp = [_tblView indexPathForCell:cell];
+//    NSIndexPath * postIdp = [NSIndexPath indexPathForRow:idp.row-1 inSection:0];
+//    
+//    
+//    WinVCCell  * wvCell = (WinVCCell*)[_tblView cellForRowAtIndexPath:postIdp];
+//    NSURL * imgUrl = [NSURL URLWithString:wvCell.winPost.photo];
+//    [[SocialPostManager sharedManager] GeneralShareText:wvCell.curContest.desc andImage:wvCell.imgPhoto.image andUrl:[NSURL URLWithString:kAppDelegate.appStoreUrl] viewController:kAppDelegate.mVC imageUrl:imgUrl];
+    [[SocialPostManager sharedManager] inviteToFacebook];
 
 }
 -(void)onTappedShare:(Contest *)contest cell:(WinVCCell *)cell image:(UIImage *)winImage{
     
-     NSURL * imgUrl = [NSURL URLWithString:cell.winPost.photo];
-      [[SocialPostManager sharedManager] GeneralShareText:contest.desc andImage:winImage andUrl:[NSURL URLWithString:kAppDelegate.appStoreUrl] viewController:kAppDelegate.mVC imageUrl:imgUrl];
+    [[SocialPostManager sharedManager] inviteToFacebook];
+//     NSURL * imgUrl = [NSURL URLWithString:cell.winPost.photo];
+//      [[SocialPostManager sharedManager] GeneralShareText:contest.desc andImage:winImage andUrl:[NSURL URLWithString:kAppDelegate.appStoreUrl] viewController:kAppDelegate.mVC imageUrl:imgUrl];
     
 }
 
