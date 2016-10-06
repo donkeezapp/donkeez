@@ -135,7 +135,7 @@
 //        _nlThumbLeft.constant = 18;
 //    } else {
     CGFloat width = [UIScreen mainScreen].bounds.size.width - 45.0f * 2.0;
-        _nlSliderFrontWidth.constant = width * (1.0f - rate);
+        _nlSliderFrontWidth.constant = width * rate;
         _nlThumbLeft.constant += _nlSliderFrontWidth.constant;
 ///    }
     
@@ -287,11 +287,12 @@
 
 - (IBAction)onShare:(id)sender {
     
-    NSURL * imgUrl =  [NSURL URLWithString:_curPost.photo];
-    if(!isSet(_curPost.photo)){
-        imgUrl = [NSURL URLWithString:_curContest.mark_image];
-    }
-    [[SocialPostManager sharedManager] GeneralShareText:kAppDelegate.curUploadedContest.desc andImage:_imgPhoto.image andUrl:[NSURL URLWithString:kAppDelegate.appStoreUrl] viewController:self imageUrl:imgUrl];
+    [[SocialPostManager sharedManager] inviteToFacebook];
+//    NSURL * imgUrl =  [NSURL URLWithString:_curPost.photo];
+//    if(!isSet(_curPost.photo)){
+//        imgUrl = [NSURL URLWithString:_curContest.mark_image];
+//    }
+//    [[SocialPostManager sharedManager] GeneralShareText:kAppDelegate.curUploadedContest.desc andImage:_imgPhoto.image andUrl:[NSURL URLWithString:kAppDelegate.appStoreUrl] viewController:self imageUrl:imgUrl];
 }
 
 

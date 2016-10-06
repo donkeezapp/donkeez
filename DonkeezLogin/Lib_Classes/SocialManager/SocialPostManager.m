@@ -117,7 +117,7 @@
     FBSDKAppInviteContent *content =[[FBSDKAppInviteContent alloc] init];
     content.appLinkURL = [NSURL URLWithString:@"https://l.facebook.com/l.php?u=https%3A%2F%2Ffb.me%2F1298326973510807&h=XAQGQD5Uz"];
     //optionally set previewImageURL
-    content.appInvitePreviewImageURL = [NSURL URLWithString:@"http://donkeez.com/wp-content/uploads/2016/06/logo-donkeez-catch-phraseEN.png"];
+    content.appInvitePreviewImageURL = [NSURL URLWithString:@"http://donkeez.com/invite_fb.jpg"];
     
     // Present the dialog. Assumes self is a view controller
     // which implements the protocol `FBSDKAppInviteDialogDelegate`.

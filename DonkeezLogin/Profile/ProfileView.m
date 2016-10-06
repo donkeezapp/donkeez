@@ -96,17 +96,8 @@
             }
             UserInfo * ui = [kAppDelegate GetUserInfo:backendless.userService.currentUser];
             NSString *firstName = ui.first_name;
-            NSString *lastName = ui.last_name;
             
-            NSMutableArray *names = [NSMutableArray array];
-            if (firstName) {
-                [names addObject:firstName];
-            }
-            if (lastName) {
-                [names addObject:lastName];
-            }
-            
-            _lblName.text = [names componentsJoinedByString:@" "];
+            _lblName.text = firstName;
             
             [_imgAvatar setBorderForColor:[UIColor whiteColor] width:2. radius:_imgAvatar.bounds.size.height / 2.]; 
         }];

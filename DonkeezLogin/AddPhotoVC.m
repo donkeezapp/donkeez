@@ -230,12 +230,13 @@
 }
 - (IBAction)onShareNext:(id)sender {
     
+    [[SocialPostManager sharedManager] inviteToFacebook];
     
-    NSURL * imgUrl =  [NSURL URLWithString:_curPost.photo];
-    if(!isSet(_curPost.photo)){
-        imgUrl = [NSURL URLWithString:_curContest.mark_image];
-    }
-      [[SocialPostManager sharedManager] GeneralShareText:kAppDelegate.curUploadedContest.desc andImage:_imgCurPost.image andUrl:[NSURL URLWithString:kAppDelegate.appStoreUrl] viewController:self imageUrl:imgUrl];
+//    NSURL * imgUrl =  [NSURL URLWithString:_curPost.photo];
+//    if(!isSet(_curPost.photo)){
+//        imgUrl = [NSURL URLWithString:_curContest.mark_image];
+//    }
+//      [[SocialPostManager sharedManager] GeneralShareText:kAppDelegate.curUploadedContest.desc andImage:_imgCurPost.image andUrl:[NSURL URLWithString:kAppDelegate.appStoreUrl] viewController:self imageUrl:imgUrl];
     
 }
 

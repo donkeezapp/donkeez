@@ -19,16 +19,18 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.0.3</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb149580215452718</string>
-				<string>backendless9F503152-806A-C808-FF6B-40270E725800</string>
+				<string>fb1298016930208478</string>
+				<string>backendless9C6CEC32-9137-2041-FFDA-B524DC109800</string>
 			</array>
 		</dict>
 		<dict>
@@ -41,9 +43,9 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>5</string>
+	<string>2</string>
 	<key>FacebookAppID</key>
-	<string>149580215452718</string>
+	<string>1298016930208478</string>
 	<key>FacebookDisplayName</key>
 	<string>Donkeez</string>
 	<key>LSApplicationQueriesSchemes</key>
